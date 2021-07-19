@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: auto auto ;
+    grid-auto-rows: auto auto;
+    padding: 100px;
+}
+
+.heroSection {
+    height: 100vh;
+    background-image: url("../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#name {
+    color: #EC4C7A;
+}
+
+.heroText {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right: 25%;
+    padding-bottom: 45px;
+    line-height: 22px;
+}
+
+.globalButton {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(45deg, #EC5196, #ED4B72);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+/* Biography Section */
+
+.bioSection {
+    height: 100vh;
+    background-image: url("../assets/biography-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.biographyBox {
+    margin-left: 150px;
+}
+
+.infoText {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    padding-bottom: 45px;
+    line-height: 22px;
+}
+
+.imgBox {
+    width: 100%;
+}
+
+/* Biography Section */
+
+/* Latest Work Section */
+.workSection {
+    height: 100vh;
+    background-image: url("../assets/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.showcase {
+    box-shadow: 5px 5px 15px grey;
+}
+/* Latest Work Section Ends */
+
+/* Testimonial Section Starts */
+.testimonialSection {
+    height: 75vh;
+    background-image: url("../assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contact {
+    background-color: #EC4C7A;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 35px 100px;
+    margin-top: 75px;
+}
+
+.client {
+    text-align: center;
+}
+
+.clientText {
+    font-weight: 300;
+}
+
+/* Testimonial Section Ends */
+/* Footer Starts */
+footer {
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Footer Ends */
+@media only screen and (max-width: 600px) {
+    .heroSection {
+        height:60vh;
+    }
+
+    .gridContainer {
+        grid-gap: 10px;
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .heroText {
+        font-size: small;
+        margin-bottom: -25px;
+    }
+
+    .globalButton {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .bioSection {
+        height: 60vh;
+    }
+
+    .biographyBox {
+        margin-left: 85px;
+    }
+
+    .infoText {
+        font-size: small;
+        margin-bottom: -20px;
+    }
+
+    .workSection {
+        height: 60vh;
+        padding: 25px;
+    }
+
+    .testimonialSection {
+        height: 75vh;
+    }
+
+    .contact {
+        max-width: 200px;
+        padding: 20px 70px;
+    }
+
+    .client {
+        margin: 0 25% 0 25%;
+        font-size: small;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    footer > p {
+        font-size: 12px;
+    }
+  }
